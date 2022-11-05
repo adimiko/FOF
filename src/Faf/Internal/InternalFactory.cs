@@ -7,6 +7,7 @@ using Faf.Exceptions;
 namespace Faf.Internal
 {
     internal static class InternalFactory<TResult>
+        where TResult : class
     {
         internal static TResult Create<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>(in T1 arg1, in T2 arg2, in T3 arg3, in T4 arg4, in T5 arg5, in T6 arg6, in T7 arg7, in T8 arg8, in T9 arg9, in T10 arg10, in T11 arg11, in T12 arg12, in T13 arg13, in T14 arg14, in T15 arg15, in T16 arg16)
         {

@@ -19,7 +19,7 @@ namespace Faf.Benchmarks
         }
 
         [Benchmark]
-        public void Build_Direct()
+        public void Create_DirectlyViaConstructor()
             => new ExampleClass(10.11m, "string");
 
         [Benchmark]
@@ -27,7 +27,7 @@ namespace Faf.Benchmarks
             => Activator.CreateInstance(typeof(ExampleClass), 10.11m, "string");
 
         [Benchmark]
-        public void Build_WithObjectFactory()
+        public void Create_WithFactory()
             => Factory<ExampleClass>.Create(10.11m, "string");
     }
 }

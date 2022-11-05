@@ -3,6 +3,7 @@
 namespace Faf
 {
     public static class Factory<TResult>
+        where TResult : class
     {
         public static TResult Create()
             => Create<IgnoredType>(null);
@@ -29,10 +30,10 @@ namespace Faf
             => Create<T1, T2, T3, T4, T5, T6, T7, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, null);
 
         public static TResult Create<T1, T2, T3, T4, T5, T6, T7, T8>(in T1 arg1, in T2 arg2, in T3 arg3, in T4 arg4, in T5 arg5, in T6 arg6, in T7 arg7, in T8 arg8)
-        => Create<T1, T2, T3, T4, T5, T6, T7, T8, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, null);
+            => Create<T1, T2, T3, T4, T5, T6, T7, T8, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, null);
 
         public static TResult Create<T1, T2, T3, T4, T5, T6, T7, T8, T9>(in T1 arg1, in T2 arg2, in T3 arg3, in T4 arg4, in T5 arg5, in T6 arg6, in T7 arg7, in T8 arg8, in T9 arg9)
-        => Create<T1, T2, T3, T4, T5, T6, T7, T8, T9, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, null);
+            => Create<T1, T2, T3, T4, T5, T6, T7, T8, T9, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, null);
 
         public static TResult Create<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(in T1 arg1, in T2 arg2, in T3 arg3, in T4 arg4, in T5 arg5, in T6 arg6, in T7 arg7, in T8 arg8, in T9 arg9, in T10 arg10)
             => Create<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, IgnoredType>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, null);
