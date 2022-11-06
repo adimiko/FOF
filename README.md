@@ -1,5 +1,5 @@
-# Faf - Fast factory :factory:
-
+# FOF
+### Fast Object Factory :factory: 
 Create objects using a public or non-public constructor.
 
 Benefits:
