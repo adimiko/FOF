@@ -2,6 +2,10 @@
 
 namespace FOF
 {
+    /// <summary>
+    /// Factory can create an object using a public or a non-public constructor.
+    /// </summary>
+    /// <typeparam name="TResult">The type of creating object.</typeparam>
     public static class Factory<TResult>
         where TResult : class
     {
