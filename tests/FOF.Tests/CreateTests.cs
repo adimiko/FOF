@@ -1,28 +1,10 @@
-﻿using Xunit;
+﻿using FOF.Tests.SeedWorks;
+using Xunit;
 
 namespace FOF.Tests
 {
     public class CreateTests
     {
-        public class ExampleClass
-        {
-            public string String { get; }
-
-            public int Int { get; }
-
-            private ExampleClass(string @string, int @int)
-            {
-                String = @string;
-                Int = @int;
-            }
-
-            private ExampleClass(int @int, string @string)
-            {
-                String = @string;
-                Int = @int;
-            }
-        }
-
         [Fact]
         public void Create()
         {
