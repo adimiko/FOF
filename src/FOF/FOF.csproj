@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<Authors>Adrian Mikołajczyk</Authors>
+		<Description>Create objects using a public or non-public constructor</Description>
+		<Copyright>Copyright Adrian Mikołajczyk</Copyright>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
