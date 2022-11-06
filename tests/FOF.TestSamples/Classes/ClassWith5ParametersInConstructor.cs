@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FOF.Tests.SeedWorks
+namespace FOF.TestSamples.Classes
 {
-    public class ClassWith3ParametersInConstructor
+    public class ClassWith5ParametersInConstructor
     {
         public string String { get; private set; }
 
@@ -14,11 +14,17 @@ namespace FOF.Tests.SeedWorks
 
         public bool Bool { get; private set; }
 
-        private ClassWith3ParametersInConstructor(string @string, int @int, bool @bool)
+        public float Float { get; private set; }
+
+        public double Double { get; private set; }
+
+        private ClassWith5ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double)
         {
             String = @string;
             Int = @int;
             Bool = @bool;
+            Float = @float;
+            Double = @double;
         }
     }
 }

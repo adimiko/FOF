@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\FOF\FOF.csproj" />
+    <ProjectReference Include="..\FOF.TestSamples\FOF.TestSamples.csproj" />
   </ItemGroup>
 
 </Project>

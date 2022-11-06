@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FOF.Tests", "tests\FOF.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FOF.Benchmarks", "tests\FOF.Benchmarks\FOF.Benchmarks.csproj", "{BA202ACE-2CB5-4452-8279-0054EA9612DE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FOF.TestSamples", "tests\FOF.TestSamples\FOF.TestSamples.csproj", "{17F6DC81-C3A2-4E3A-9480-740EB369904F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{BA202ACE-2CB5-4452-8279-0054EA9612DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA202ACE-2CB5-4452-8279-0054EA9612DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA202ACE-2CB5-4452-8279-0054EA9612DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F6DC81-C3A2-4E3A-9480-740EB369904F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F6DC81-C3A2-4E3A-9480-740EB369904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F6DC81-C3A2-4E3A-9480-740EB369904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F6DC81-C3A2-4E3A-9480-740EB369904F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{4B3A4C75-37E4-4149-BC0C-0284D78AD877} = {05A9FD7D-71F1-4C0A-97F4-D4A271DAC67A}
 		{F8BF56E8-871B-4373-B1E1-1CCF034652B7} = {A13D828D-39BB-4BD3-82A8-F00985D4E901}
 		{BA202ACE-2CB5-4452-8279-0054EA9612DE} = {A13D828D-39BB-4BD3-82A8-F00985D4E901}
+		{17F6DC81-C3A2-4E3A-9480-740EB369904F} = {A13D828D-39BB-4BD3-82A8-F00985D4E901}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CE369DC-B4F1-4481-B9A2-D38BF9409424}

@@ -1,4 +1,4 @@
-﻿namespace FOF.Tests.SeedWorks
+﻿namespace FOF.TestSamples.Classes
 {
     public class ClassWith4ParametersInConstructor
     {

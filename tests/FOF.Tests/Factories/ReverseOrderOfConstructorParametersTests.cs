@@ -1,32 +1,26 @@
-﻿using FOF.Tests.SeedWorks;
+﻿using FOF.TestSamples.Classes;
 using Xunit;
 
-namespace FOF.Tests
+namespace FOF.Tests.Factories
 {
-    public class CreateTests
+    public class ReverseOrderOfConstructorParametersTests
     {
         [Fact]
-        public void Create()
+        public void CreateObjects() //TODO
         {
             var @string = "string";
             var @int = 1;
 
             var @object = Factory<ExampleClass>.Create(@string, @int);
+            var @object2 = Factory<ExampleClass>.Create(@int, @string);
 
             Assert.Equal(@string, @object.String);
             Assert.Equal(@int, @object.Int);
-        }
-
-        [Fact]
-        public void Create2()
-        {
-            var @int = 1;
-            var @string = "string";
-
-            var @object = Factory<ExampleClass>.Create(@int, @string);
 
             Assert.Equal(@string, @object.String);
             Assert.Equal(@int, @object.Int);
+
+            Assert.NotEqual(@object, @object2);
         }
     }
 }

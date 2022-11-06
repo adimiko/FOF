@@ -1,10 +1,10 @@
 ﻿using FOF.Tests.SeedWorks;
+using FOF.TestSamples.Classes;
 using System.Collections.Concurrent;
 using Xunit;
 
-namespace FOF.Tests
+namespace FOF.Tests.Factories
 {
-    [Collection("Sequential")]
     public class ThreadSafetyTests
     {
         [Fact]

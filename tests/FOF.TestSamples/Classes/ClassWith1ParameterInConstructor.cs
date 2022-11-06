@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FOF.Tests.SeedWorks
+namespace FOF.TestSamples.Classes
 {
     public class ClassWith1ParameterInConstructor
     {

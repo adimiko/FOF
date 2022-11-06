@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FOF.Tests.SeedWorks
+﻿namespace FOF.TestSamples.Classes
 {
-    public class ClassWith6ParametersInConstructor
+    public class ClassWith8ParametersInConstructor
     {
         public string String { get; private set; }
 
@@ -20,7 +14,11 @@ namespace FOF.Tests.SeedWorks
 
         public decimal Decimal { get; private set; }
 
-        private ClassWith6ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal)
+        public ExampleClass ExampleClass { get; private set; }
+
+        public char Char { get; private set; }
+
+        private ClassWith8ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal, ExampleClass exampleClass, char @char)
         {
             String = @string;
             Int = @int;
@@ -28,6 +26,8 @@ namespace FOF.Tests.SeedWorks
             Float = @float;
             Double = @double;
             Decimal = @decimal;
+            ExampleClass = exampleClass;
+            Char = @char;
         }
     }
 }
