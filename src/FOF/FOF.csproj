@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Authors>Adrian Mikołajczyk</Authors>
+		<Description>Create objects using a public or non-public constructor</Description>
+		<Copyright>Copyright Adrian Mikołajczyk</Copyright>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>disable</Nullable>
+		<PackageProjectUrl>https://github.com/adimiko/fof</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>fast;reflection;factory;object;private;constructor;create;new</PackageTags>
+	</PropertyGroup>
+
+</Project>
