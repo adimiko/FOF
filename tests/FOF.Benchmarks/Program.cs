@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Faf.Benchmarks
+namespace FOF.Benchmarks
 {
     public class Program
     {

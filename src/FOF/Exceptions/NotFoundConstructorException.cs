@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Faf.Exceptions
+namespace FOF.Exceptions
 {
     public class NotFoundConstructorException : Exception
     {

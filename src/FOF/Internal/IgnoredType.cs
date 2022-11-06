@@ -1,4 +1,4 @@
-﻿namespace Faf.Internal
+﻿namespace FOF.Internal
 {
     internal class IgnoredType { }
 }

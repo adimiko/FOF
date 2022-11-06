@@ -1,6 +1,6 @@
-﻿using Faf.Internal;
+﻿using FOF.Internal;
 
-namespace Faf
+namespace FOF
 {
     public static class Factory<TResult>
         where TResult : class

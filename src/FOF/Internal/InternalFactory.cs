@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Faf.Exceptions;
+using FOF.Exceptions;
 
-namespace Faf.Internal
+namespace FOF.Internal
 {
     internal static class InternalFactory<TResult>
         where TResult : class

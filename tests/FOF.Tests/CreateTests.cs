@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Faf.Tests
+namespace FOF.Tests
 {
     public class CreateTests
     {
