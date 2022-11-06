@@ -11,7 +11,7 @@ namespace FOF.Tests
         public void FactoryCreateOnlyOneTypeObject()
         {
             // Arrange
-            const int expectedNumberOfObjects = 5000;
+            const int expectedNumberOfObjects = 20000;
             var _objects = new ConcurrentBag<object>();
 
             // Act
@@ -29,7 +29,7 @@ namespace FOF.Tests
         public void FactoryCreateDifferentTypesOfObjects()
         {
             // Arrange
-            const int expectedNumberOfObjects = 5000;
+            const int expectedNumberOfObjects = 20000;
             var _objects = new ConcurrentBag<object>();
 
             // Act
