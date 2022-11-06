@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace FOF.TestSamples.Classes
 {
-    public class ClassWith9ParametersInConstructor
+    public class ClassWith10ParametersInConstructor
     {
         public string String { get; private set; }
 
@@ -20,9 +22,11 @@ namespace FOF.TestSamples.Classes
 
         public char Char { get; private set; }
 
+        public int[] Array { get; private set; }
+
         public IEnumerable<int> Enumerable { get; private set; }
 
-        private ClassWith9ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal, ExampleClass exampleClass, char @char, IEnumerable<int> enumerable)
+        private ClassWith10ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal, ExampleClass exampleClass, char @char, IEnumerable<int> enumerable, int[] array)
         {
             String = @string;
             Int = @int;
@@ -33,6 +37,7 @@ namespace FOF.TestSamples.Classes
             ExampleClass = exampleClass;
             Char = @char;
             Enumerable = enumerable;
+            Array = array;
         }
     }
 }

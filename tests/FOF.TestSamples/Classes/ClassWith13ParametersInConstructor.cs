@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FOF.TestSamples.Classes
 {
-    public class ClassWith9ParametersInConstructor
+    public class ClassWith13ParametersInConstructor
     {
         public string String { get; private set; }
 
@@ -20,9 +21,17 @@ namespace FOF.TestSamples.Classes
 
         public char Char { get; private set; }
 
+        public int[] Array { get; private set; }
+
         public IEnumerable<int> Enumerable { get; private set; }
 
-        private ClassWith9ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal, ExampleClass exampleClass, char @char, IEnumerable<int> enumerable)
+        public DayOfWeek DayOfWeek { get; private set; }
+
+        public DateTime DateTime { get; private set; }
+
+        public object Object { get; private set; }
+
+        private ClassWith13ParametersInConstructor(string @string, int @int, bool @bool, float @float, double @double, decimal @decimal, ExampleClass exampleClass, char @char, IEnumerable<int> enumerable, int[] array, DayOfWeek dayOfWeek, DateTime dateTime, object @object)
         {
             String = @string;
             Int = @int;
@@ -33,6 +42,10 @@ namespace FOF.TestSamples.Classes
             ExampleClass = exampleClass;
             Char = @char;
             Enumerable = enumerable;
+            Array = array;
+            DayOfWeek = dayOfWeek;
+            DateTime = dateTime;
+            Object = @object;
         }
     }
 }
