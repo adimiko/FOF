@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-namespace FOF.Tests.SeedWorks
+﻿namespace FOF.Tests.SeedWorks
 {
     internal static class ThreadSafeRandom
     {

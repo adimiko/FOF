@@ -38,11 +38,11 @@ namespace FOF.Tests.Factories
         private readonly static long Long = 1;
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingParameterlessConstructor_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesParameterlessConstructor_IsSuccessful()
             => Factory<ClassWithParameterlessConstructor>.Create();
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith1Parameter_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith1Parameter_IsSuccessful()
         {
             var @object = Factory<ClassWith1ParameterInConstructor>.Create(String);
 
@@ -50,7 +50,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith2Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith2Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith2ParametersInConstructor>.Create(String, Int);
 
@@ -59,7 +59,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith3Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith3Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith3ParametersInConstructor>.Create(String, Int, Bool);
 
@@ -69,7 +69,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith4Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith4Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith4ParametersInConstructor>.Create(String, Int, Bool, Float);
 
@@ -80,7 +80,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith5Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith5Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith5ParametersInConstructor>.Create(String, Int, Bool, Float, Double);
 
@@ -92,7 +92,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith6Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith6Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith6ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal);
 
@@ -105,7 +105,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith7Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith7Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith7ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass);
 
@@ -119,7 +119,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith8Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith8Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith8ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char);
 
@@ -134,7 +134,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith9Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith9Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith9ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable);
 
@@ -150,7 +150,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith10Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith10Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith10ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array);
 
@@ -167,7 +167,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith11Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith11Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith11ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek);
 
@@ -185,7 +185,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith12Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith12Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith12ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek, DateTime);
 
@@ -204,7 +204,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith13Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith13Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith13ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek, DateTime, Object);
 
@@ -224,7 +224,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith14Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith14Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith14ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek, DateTime, Object, Byte);
 
@@ -245,7 +245,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith15Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith15Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith15ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek, DateTime, Object, Byte, UInt);
 
@@ -267,7 +267,7 @@ namespace FOF.Tests.Factories
         }
 
         [Fact]
-        public void CreateObject_WhenFactoryUsingConstructorWith16Parameters_IsSuccessful()
+        public void CreateObject_WhenFactoryUsesConstructorWith16Parameters_IsSuccessful()
         {
             var @object = Factory<ClassWith16ParametersInConstructor>.Create(String, Int, Bool, Float, Double, Decimal, ExampleClass, Char, Enumerable, Array, DayOfWeek, DateTime, Object, Byte, UInt, Long);
 
