@@ -1,8 +1,8 @@
 ![logo-FOF](https://user-images.githubusercontent.com/53557466/200375472-9965e687-b8f6-4cb7-94b6-7b84a17352d6.png)
 ### Fast Object Factory :factory: 
-Create objects using a public or non-public constructor.
+Create objects using a public or a non-public constructor.
 
-Benefits:
+### Benefits:
 
 - Simple to use
 - High performance reflection
@@ -10,8 +10,14 @@ Benefits:
 - Over `10x` faster than `Activator` from System namespace
 - Option to use a private constructor with parameters
 
+### Installation
+```sh
+dotnet add package FOF
+```
+Package is hosted on [NuGet](https://www.nuget.org/packages/FOF).
+
 ### Example
-Eample class with private constructor with parameters.
+Example class which has constructor with parameters.
 
     public class ExampleClass
     {
