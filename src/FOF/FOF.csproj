@@ -2,13 +2,31 @@
 
 	<PropertyGroup>
 		<Authors>Adrian Mikołajczyk</Authors>
-		<Description>Create objects using a public or non-public constructor</Description>
+		<Description>Create objects using a public or a non-public constructor</Description>
 		<Copyright>Copyright Adrian Mikołajczyk</Copyright>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>disable</Nullable>
-		<PackageProjectUrl>https://github.com/adimiko/fof</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageTags>fast;reflection;factory;object;private;constructor;create;new</PackageTags>
+		<Version>$(VersionPrefix)</Version>
+		<PackageIcon>logo.png</PackageIcon>
+		<RepositoryUrl>https://github.com/adimiko/fof</RepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\assets\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>

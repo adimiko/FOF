@@ -23,9 +23,9 @@ namespace FOF.Internal
             ConstructorInfo constructor = GetConstructor(constructorParameterTypes);
             ParameterExpression[] parameterExpressions = GetParameterExpressions(parameterTypes);
 
-            var constructorParametersExpressions = parameterExpressions.Take(constructorParameterTypes.Length).ToArray();
+            ParameterExpression[] constructorParametersExpressions = parameterExpressions.Take(constructorParameterTypes.Length).ToArray();
 
-            var constructorExpression = Expression.New(constructor, constructorParametersExpressions);
+            NewExpression constructorExpression = Expression.New(constructor, constructorParametersExpressions);
 
             var compiledConstructorExpression = Expression.Lambda<Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>>(constructorExpression, parameterExpressions).Compile();
 
@@ -38,9 +38,24 @@ namespace FOF.Internal
 
             var constructorInfo = typeof(TResult).GetConstructor(bindingFlags, Type.DefaultBinder, constructorParameterTypes, null);
 
-            return constructorInfo ?? throw new NotFoundConstructorException($"{typeof(TResult)} does not contain a constructor with the following parameter types: " + string.Join<Type>(", ", constructorParameterTypes));
+            if (constructorInfo != null)
+            {
+                return constructorInfo;
+            }
+
+            var numberOfParameters = constructorParameterTypes.Length;
+
+            switch (numberOfParameters)
+            {
+                case 0:
+                    throw new NotFoundConstructorException($"{typeof(TResult)} does not contain a parameterless constructor");
+                case 1:
+                    throw new NotFoundConstructorException($"{typeof(TResult)} does not contain a constructor with a parameter of type {constructorParameterTypes[0]}");
+                default:
+                    throw new NotFoundConstructorException($"{typeof(TResult)} does not contain a constructor with the following parameter types: " + string.Join<Type>(", ", constructorParameterTypes));
+            }
         }
 
-        private static ParameterExpression[] GetParameterExpressions(in Type[] constructorParameterTypes) => constructorParameterTypes.Select(x => Expression.Parameter(x)).ToArray();
+        private static ParameterExpression[] GetParameterExpressions(in Type[] parameterTypes) => parameterTypes.Select(x => Expression.Parameter(x)).ToArray();
     }
 }
