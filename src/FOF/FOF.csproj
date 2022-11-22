@@ -11,6 +11,8 @@
 		<Version>$(VersionPrefix)</Version>
 		<PackageIcon>logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/adimiko/fof</RepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<RepositoryType>git</RepositoryType>
